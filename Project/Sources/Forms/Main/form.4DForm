@@ -1,0 +1,177 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 30,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Welcome",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "QR Code Demo",
+					"top": 18,
+					"left": 143,
+					"width": 210,
+					"height": 36,
+					"fontSize": 30
+				},
+				"Button": {
+					"type": "button",
+					"text": "  For Website",
+					"top": 74,
+					"left": 268,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"defaultButton": false,
+					"borderStyle": "solid"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "For Email",
+					"top": 126,
+					"left": 30,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"borderStyle": "solid"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "For Phone Call",
+					"top": 126,
+					"left": 268,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"borderStyle": "solid"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "For Contact",
+					"top": 74,
+					"left": 30,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"borderStyle": "solid"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 81,
+					"left": 42,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/add-contact.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 134,
+					"left": 42,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/email.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 81,
+					"left": 285,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/web.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 134,
+					"left": 285,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/phone-call.png",
+					"pictureFormat": "scaled"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "   QRC Picture",
+					"top": 186,
+					"left": 143,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"borderStyle": "solid"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 194,
+					"left": 163,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/qr-code.png",
+					"pictureFormat": "scaled"
+				}
+			},
+			"entryOrder": [
+				"Button3",
+				"Button",
+				"Button1",
+				"Button2",
+				"Button4"
+			]
+		}
+	],
+	"geometryStamp": 94,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

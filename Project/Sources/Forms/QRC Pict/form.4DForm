@@ -1,0 +1,111 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Create QR Code Image",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Input": {
+					"type": "input",
+					"left": 21,
+					"top": 104,
+					"width": 300,
+					"height": 300,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.pic"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Generate QR Code Pict",
+					"top": 55,
+					"left": 21,
+					"width": 178,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"fontWeight": "normal",
+					"borderStyle": "solid"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 95,
+					"top": 19,
+					"width": 133,
+					"height": 17,
+					"dataSource": "Form:C1466.data",
+					"placeholder": "example: us.4d.com"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Enter data:",
+					"top": 19,
+					"left": 21,
+					"width": 71,
+					"height": 16,
+					"textAlign": "automatic"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "TRACE CODE",
+					"top": 51,
+					"left": 212,
+					"width": 109,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"dataSourceTypeHint": "boolean"
+				}
+			},
+			"entryOrder": [
+				"Input1",
+				"Button",
+				"Check Box",
+				"Input"
+			]
+		}
+	],
+	"geometryStamp": 38,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

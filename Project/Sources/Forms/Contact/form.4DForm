@@ -1,0 +1,261 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 40,
+	"bottomMargin": 40,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Enter Contact Info",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "Contact Form",
+					"top": 29,
+					"left": 263,
+					"width": 164,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "First Name:",
+					"top": 91,
+					"left": 70,
+					"width": 83,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input": {
+					"type": "input",
+					"left": 165,
+					"top": 91,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.firstName",
+					"placeholder": "John"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Last Name:",
+					"top": 128,
+					"left": 70,
+					"width": 83,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 165,
+					"top": 128,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.lastName",
+					"placeholder": "Smith"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Email:",
+					"top": 165,
+					"left": 107,
+					"width": 46,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 165,
+					"top": 165,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.email",
+					"placeholder": "JSmith@email.com"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Phone Number:",
+					"top": 202,
+					"left": 45,
+					"width": 108,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 165,
+					"top": 202,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.phone",
+					"placeholder": "(555)555-5555"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Street Address:",
+					"top": 91,
+					"left": 382,
+					"width": 113,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 507,
+					"top": 91,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.street",
+					"placeholder": "123 Main St"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "City:",
+					"top": 128,
+					"left": 455,
+					"width": 40,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input5": {
+					"type": "input",
+					"left": 507,
+					"top": 128,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.city",
+					"placeholder": "Anytown"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "State:",
+					"top": 165,
+					"left": 450,
+					"width": 45,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input6": {
+					"type": "input",
+					"left": 507,
+					"top": 165,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.state",
+					"placeholder": "CA"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "ZIP Code:",
+					"top": 202,
+					"left": 425,
+					"width": 75,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input7": {
+					"type": "input",
+					"left": 507,
+					"top": 202,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.zip",
+					"placeholder": "95555"
+				},
+				"Button": {
+					"type": "button",
+					"text": "        Generate QR Code",
+					"top": 249,
+					"left": 234,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"borderStyle": "solid"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "TRACE CODE",
+					"top": 249,
+					"left": 45,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Include 4D Logo",
+					"top": 249,
+					"left": 455,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.data.logo",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 257,
+					"left": 250,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/qr-code.png",
+					"pictureFormat": "scaled"
+				}
+			}
+		}
+	],
+	"geometryStamp": 132,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

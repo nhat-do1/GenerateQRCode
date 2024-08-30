@@ -1,0 +1,138 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 40,
+	"bottomMargin": 40,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Create QR Code from URL",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "QR Code for Website",
+					"top": 31,
+					"left": 139,
+					"width": 294,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Enter URL:",
+					"top": 65,
+					"left": 48,
+					"width": 83,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input": {
+					"type": "input",
+					"left": 74,
+					"top": 96,
+					"width": 287,
+					"height": 17,
+					"dataSource": "Form:C1466.data.url",
+					"placeholder": "us.4d.com"
+				},
+				"Button": {
+					"type": "button",
+					"text": "          Generate QR Code",
+					"top": 80,
+					"left": 387,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"borderStyle": "solid"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "TRACE CODE",
+					"top": 128,
+					"left": 48,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Include 4D Logo",
+					"top": 128,
+					"left": 387,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.data.logo",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 88,
+					"left": 408,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/qr-code.png",
+					"pictureFormat": "scaled"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "http://",
+					"top": 96,
+					"left": 25,
+					"width": 46,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				}
+			}
+		}
+	],
+	"geometryStamp": 160,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

@@ -1,0 +1,128 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 40,
+	"bottomMargin": 40,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "Create QR Code for Phone Call",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "QR Code for Phone Number",
+					"top": 31,
+					"left": 139,
+					"width": 314,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Phone #:",
+					"top": 91,
+					"left": 48,
+					"width": 89,
+					"height": 17,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Input": {
+					"type": "input",
+					"left": 143,
+					"top": 91,
+					"width": 177,
+					"height": 17,
+					"dataSource": "Form:C1466.data.phone",
+					"placeholder": "(555)555-5555"
+				},
+				"Button": {
+					"type": "button",
+					"text": "          Generate QR Code",
+					"top": 80,
+					"left": 387,
+					"width": 200,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"borderStyle": "solid"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "TRACE CODE",
+					"top": 128,
+					"left": 48,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Include 4D Logo",
+					"top": 128,
+					"left": 387,
+					"width": 154,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.data.logo",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 88,
+					"left": 406,
+					"width": 25,
+					"height": 25,
+					"picture": "Images/qr-code.png",
+					"pictureFormat": "scaled"
+				}
+			}
+		}
+	],
+	"geometryStamp": 149,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

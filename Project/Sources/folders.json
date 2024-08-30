@@ -1,0 +1,26 @@
+{
+	"Classes": {
+		"classes": [
+			"OffscreenArea"
+		]
+	},
+	"Forms": {
+		"forms": [
+			"Contact",
+			"Email",
+			"Main",
+			"Phone",
+			"QRC Pict",
+			"QRCode",
+			"Website"
+		]
+	},
+	"Methods": {
+		"methods": [
+			"convertSpecChars",
+			"getQRPicture",
+			"OpenMainForm"
+		]
+	},
+	"trash": {}
+}
